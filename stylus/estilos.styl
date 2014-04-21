@@ -48,8 +48,7 @@ ul
 	border-bottom 1px solid gris_claro
 .menu
 	display none
-.logo
-	display none
+	
 .name 
 	color gris_oscuro
 .relative
@@ -129,6 +128,7 @@ ul
 .playing
 	&.small
 		width 20em
+		margin 0 auto
 .input
 	border 1px solid gris_claro
 	height 2.5em
@@ -146,6 +146,42 @@ ul
 	color gris_claro
 	right .5em
 	font-size 1.1em
+
+.playlist
+	display none
+	width 22em
+	padding 0 2em
+	border-left 1px solid gris_claro
+	.list
+		list-style none
+	.item
+		padding 1em 0
+	.action
+		font-size 14px
+.isotipo
+	width 122px
+.logo
+	background white
+	display none
+	overflow hidden
+	padding 1.3em 0
+.avatar
+	width 38px
+	height 38px
+	margin-left .5em
+.username
+	color gris_claro
+	position relative
+	top 9px
+	margin-right 3em
+	margin-left .5em
+	&:after
+		border-left 7px solid transparent
+		border-right 7px solid transparent
+		border-top 9px solid gris_claro
+		content ""
+		display inline-block
+		margin-left .4em
 
 @media screen and (min-width: 480px)
 	
@@ -165,8 +201,15 @@ ul
 		background gris_mas_claro
 	.button-menu
 		display none
+	.playing
+		padding-top 1.3em
+		&.large
+			margin 0 auto
+			width 62.5em
+			overflow hidden
 	.menu 
 		background gris_mas_claro
+		border-top 1px solid gris_claro
 		display block
 		overflow hidden
 		.item
@@ -180,31 +223,17 @@ ul
 				text-transform uppercase
 				&:hover
 					border-top 5px solid gris_claro
+	.music
+		width 32.5em
+		float left
+		.description
+			display none
+	
 	.header
 		height auto
+		border none
 		.title
 			display none	
-	.isotipo
-		width 122px
+	.playlist
 	.logo
-		background white
 		display block
-		overflow hidden
-		padding 1.3em 0
-	.avatar
-		width 38px
-		height 38px
-		margin-left .5em
-	.username
-		color gris_claro
-		position relative
-		top 9px
-		margin-right 3em
-		margin-left .5em
-		&:after
-			border-left 7px solid transparent
-			border-right 7px solid transparent
-			border-top 9px solid gris_claro
-			content ""
-			display inline-block
-			margin-left .4em
